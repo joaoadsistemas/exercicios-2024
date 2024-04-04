@@ -1,0 +1,36 @@
+.container {
+  width: 242px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.citacao {
+  color: #ed7839;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  margin: 12px 0px 16px 0px;
+}
+
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background-color: #ed7839;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  height: 30px;
+  padding: 6px 12px;
+  margin-left: 5px;
+}
+
+.download span {
+  margin-right: 5px;
+}

@@ -1,0 +1,70 @@
+.barra-superior {
+  padding: 5px 36px;
+  font-family: "Roboto";
+  background-color: #fdf1eb;
+  color: #725c5c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-geral,
+.codigo {
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 1px 0px;
+}
+
+.idioma {
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.globo {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-left: 9px;
+}
+.dropdown {
+  margin-left: 5px;
+  margin-right: 13px;
+}
+
+.card-user {
+  display: flex;
+}
+
+.esquerda {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.direita {
+  display: flex;
+}
+
+.direita img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.notificacao {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  background-color: #f85959;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: -10px;
+}
