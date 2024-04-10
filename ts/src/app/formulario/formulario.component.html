@@ -1,14 +1,34 @@
-<div class="formulario">
+<div *ngIf="!enviado" class="formulario">
   <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
   <form (submit)="enviar($event)">
-    <label for=" assunto">Assunto</label>
-    <input type="text" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+    <label for="assunto">Assunto</label>
+    <input
+      type="text"
+      class="subject"
+      placeholder="Defina um tópico sucinto para notificar os autores..."
+    />
 
     <label for="conteudo">Conteúdo</label>
     <textarea id="conteudo"></textarea>
     <div class="enviar">
-      <button class="enviar-topico">Enviar</button>
+      <button
+        id="enviar-topico-button"
+        type="submit"
+        class="enviar-topico"
+        [disabled]="formSubmitted"
+      >
+        Enviar
+      </button>
     </div>
   </form>
 </div>
-<div class="divisoria-form"></div>
+
+<div *ngIf="enviado && !formSubmitted" class="enviado">
+  <app-enviado></app-enviado>
+  <app-feedback></app-feedback>
+</div>
+
+<div *ngIf="formSubmitted" class="enviado">
+  <!-- Display a success message here -->
+  <p>O formulário foi enviado com sucesso!</p>
+</div>

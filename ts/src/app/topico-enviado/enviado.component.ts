@@ -6,16 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./enviado.scss'],
 })
 export class EnviadoComponent {
-  criarTopico() {
-    const componentEnviado = document.querySelector(
-      'app-enviado'
-    ) as HTMLElement;
-    const componentFormulario = document.querySelector(
-      'app-formulario'
-    ) as HTMLElement;
-    if (componentFormulario != undefined) {
-      componentFormulario.style.display = 'block';
-      componentEnviado.style.display = 'none';
-    }
+  formularioVisible: boolean = false;
+
+  toggleFormulario() {
+    this.formularioVisible = !this.formularioVisible;
   }
 }
