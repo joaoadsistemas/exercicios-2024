@@ -2,7 +2,6 @@
 
 namespace Chuva\Php\WebScrapping;
 
-use Box\Spout\Common\Entity\Row;
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 class Writer
