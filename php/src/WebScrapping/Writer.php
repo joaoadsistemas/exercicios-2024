@@ -4,10 +4,8 @@ namespace Chuva\Php\WebScrapping;
 
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
-class Writer
-{
-    public function write($data): void
-    {
+class Writer {
+    public function write($data): void {
         $filePath = __DIR__ . '/data.xlsx';
         $maxAuthors = 0;
 
